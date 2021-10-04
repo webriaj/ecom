@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Shopping</title>
+
+    <!----------Font-awesome cdn--------->
+
+    <!----------Google Font-------------->
+
+    <!----------Bootstrap Css------------>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!----------Custom CSS--------------->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container m-auto py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="https://www.mobiledokan.com/wp-content/uploads/2021/08/Xiaomi-Poco-M3-Pro-5G-image.jpg" class="img-fluid h-100 rounded-start " alt="mi">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Xiomi Poco M3 Pro</h5>
+                          <p class="card-text">Fingerprint, Accelerometer, Gyroscope, Proximity, E-Compass</p>
+                          <p class="card-text"> BDT: <input type="text" class="border-0 fw-bold" value="49990.10" id="price"></p>
+                          <div  class="btn-group">
+                              <button onclick="lessQty(); amount2();" id="lowqty" class="btn btn-info text-white ">-</button>
+                              <input type="text" id="qty" class="btn btn-primary" value="1">
+                              <button onclick="incQty(); amount();" id="plusqty" class="btn btn-info text-white ">+</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="https://www.mobiledokan.com/wp-content/uploads/2021/06/Xiaomi-Redmi-Note-10-Pro-Max-image.jpg" class="img-fluid h-100 rounded-start " alt="mi">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Redmi Note 10 Pro</h5>
+                          <p class="card-text">Fingerprint, Accelerometer, Gyroscope, Proximity, E-Compass</p>
+                          <p class="card-text"> BDT: <span id="price">30990.00</span></p>
+                          <div class="btn-group">
+                              <button id="lowqty" class="btn btn-info text-white ">-</button>
+                              <input id="qty" type="text" class="btn btn-primary" value="0">
+                              <button id="plusqty" class="btn btn-info text-white ">+</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+    </div>
+   
+
+    <!---------JavaScript-------------->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
